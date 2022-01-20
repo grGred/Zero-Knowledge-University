@@ -26,9 +26,14 @@ This sounds like a lot of work! But don’t worry, you don’t have to do it fro
 
 For simplicity, let’s define the following rules for spawning coordinate (x,y) where x and y are both positive integers:
 
-It has to be within a Euclidean distance of 64 to the origin (0, 0)
-Its Euclidean distance to the origin (0,0) has to be more than 32.
-💫 GCD(x,y) must be greater than 1 and must not be a prime number.💫 
-It cannot be a position where other players have spawned within the last 5 minutes
-It cannot be a position currently occupied by another player.
+1) It has to be within a Euclidean distance of 64 to the origin (0, 0)
+
+2) Its Euclidean distance to the origin (0,0) has to be more than 32.
+
+3) 💫 GCD(x,y) must be greater than 1 and must not be a prime number.💫 
+
+4) It cannot be a position where other players have spawned within the last 5 minutes
+
+5) It cannot be a position currently occupied by another player.
+
 For submission, please implement the code for (1)-(3) and deploy your custom “Dark Forest” (spawning only edition) to a local blockchain, such as Ganache (or Harmony Ganache). Spawn a few players.
